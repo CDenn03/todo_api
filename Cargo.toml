@@ -1,0 +1,13 @@
+[package]
+name = "todo_api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.11.0"
+diesel = { version = "2.2.12", features = ["mysql", "r2d2"] }
+serde = { version = "1.0.219", features = ["derive"] }
+dotenv = "0.15.0"
+r2d2 = "0.8.10"
+utoipa = { version = "5.4.0", features = ["actix_extras","chrono"] }
+utoipa-swagger-ui = { version = "9.0.2", features = ["actix-web"] }
